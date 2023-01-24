@@ -1,0 +1,23 @@
+@import "normalize.scss";
+@import "_fonts.scss";
+$container: 300px;
+$padding-container: 10px;
+
+html {
+    box-sizing: border-box;
+    $container: 300px;
+    $padding-container: 10px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Nunito;
+}
+
+.container {
+    max-width: $container + $padding-container*2;
+    padding: 0 $padding-container;
+    margin: 0 auto;
+}
