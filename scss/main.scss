@@ -1,5 +1,8 @@
-@import "normalize.scss";
+@import "_normalize.scss";
 @import "_fonts.scss";
+@import "_mixins";
+@import "_header.scss";
+
 $container: 300px;
 $padding-container: 10px;
 
@@ -24,6 +27,7 @@ img, svg {
     max-width: 100%;
     max-height: 100%;
     height: auto;
+    display: block;
 }
 
 button {
