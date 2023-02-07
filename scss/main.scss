@@ -2,9 +2,9 @@
 @import "_fonts.scss";
 @import "_mixins";
 @import "_header.scss";
+@import "_navigation.scss";
 
-$container: 300px;
-$padding-container: 10px;
+
 
 html {
     box-sizing: border-box;
@@ -48,9 +48,22 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, p, figure, {
+h1 {
+    margin: 0;
+} h2{
     margin: 0;
 }
+   h3{
+    margin: 0;
+   }
+
+     p{
+        margin: 0;
+     }
+
+     figure{
+        margin: 0;
+     }
 
 fieldset {
     margin: 0;
@@ -67,4 +80,44 @@ fieldset {
     max-width: $container + $padding-container*2;
     padding: 0 $padding-container;
     margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    .header {
+        background-size: 1400px;
+        padding-bottom: 44px;
+
+    }
+    .header__container {
+        max-width: 560px;
+    }
+    .header__title-container {
+        padding-bottom: 0;
+        padding-left: 180px;
+        padding-top: 27px;
+        text-align: left;
+        background-position: left;
+        background-size: contain;
+        min-height: 190px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-size: 2540px;
+    }
+    .header__container {
+        max-width: 562px + $padding-container*2;
+
+    }
+    .header__title-container {
+        padding-left: 237px;
+        min-height: 229px;
+
+    }
+    .header__title {
+        font-size: 36px;
+        margin-bottom: 26px;
+    }
 }
