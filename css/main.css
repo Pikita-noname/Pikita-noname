@@ -380,6 +380,10 @@ template {
   margin-bottom: 30px;
 }
 
+.navigation__list::-webkit-scrollbar {
+  width: 0;
+}
+
 .navigation__container {
   padding: 0;
   min-width: 100vw;
@@ -453,6 +457,27 @@ template {
   background-image: url(../img/souse.png);
 }
 
+@media (min-width: 768px) {
+  .navigation__list {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .navigation {
+    margin-bottom: 50px;
+  }
+  .navigation__list {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .navigation__button {
+    padding: 9px 14px 9px 46px;
+    font-size: 16px;
+    line-height: 22px;
+    background-position: 14px center;
+  }
+}
 html {
   box-sizing: border-box;
 }
