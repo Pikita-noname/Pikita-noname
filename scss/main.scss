@@ -3,6 +3,8 @@
 @import "_mixins";
 @import "_header.scss";
 @import "_navigation.scss";
+@import "_catalog.scss";
+@import "_order.scss";
 
 
 
@@ -120,4 +122,8 @@ fieldset {
         font-size: 36px;
         margin-bottom: 26px;
     }
+}
+
+.currency {
+    font-weight: 400;
 }
